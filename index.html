@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Rena 🤍</title>
 
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:linear-gradient(180deg,#0b1020,#1b2340);
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+color:white;
+}
+
+.card{
+background:rgba(255,255,255,.1);
+backdrop-filter:blur(20px);
+padding:40px;
+border-radius:25px;
+text-align:center;
+max-width:500px;
+width:90%;
+box-shadow:0 0 30px rgba(255,255,255,.15);
+}
+
+h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+}
+
+button{
+margin-top:25px;
+padding:15px 35px;
+border:none;
+border-radius:50px;
+font-size:18px;
+background:#ff5e8a;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.hidden{
+display:none;
+}
+
+img{
+width:220px;
+border-radius:20px;
+margin-top:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card" id="welcome">
+
+<h1>Hi, Rena 🤍</h1>
+
+<p>
+Before you close this page,
+please give me just 2 minutes.
+</p>
+
+<button onclick="openLetter()">
+Open My Heart
+</button>
+
+</div>
+
+<div class="card hidden" id="letter">
+
+<h1>Dear Rena</h1>
+
+<img src="rena1.jpg">
+
+<p>
+
+Aku membuat halaman ini bukan untuk memaksamu kembali.
+
+Aku membuatnya karena ada banyak hal yang belum sempat aku sampaikan dengan baik.
+
+Aku sadar beberapa sikap dan cara komunikasiku telah membuatmu kecewa.
+
+Aku benar-benar minta maaf.
+
+Aku masih ingat kata-katamu...
+
+"Kalau masih mau sama aku, coba upgrade skill komunikasi kamu ya."
+
+Aku tidak ingin hanya mengatakan bahwa aku akan berubah.
+
+Aku ingin membuktikannya.
+
+Aku ingin menjadi seseorang yang lebih baik.
+
+Terima kasih sudah hadir di hidupku.
+
+Apa pun keputusanmu nanti...
+
+aku akan tetap menghormatinya.
+
+🤍
+
+Love,
+
+Billy
+
+</p>
+
+</div>
+
+<script>
+function openLetter(){
+
+document.getElementById("welcome").classList.add("hidden");
+
+document.getElementById("letter").classList.remove("hidden");
+
+}
+</script>
+
+</body>
+</html>
